@@ -80,7 +80,7 @@ jobs:
       # Compilation validation step
       - run: 
           name: Installing API module depedencies
-          command: cd lib/stolas && go mod download
+          command: cd lib/stolas && dep ensure
       - run: 
           name: Compiling API module
           command: cd lib/stolas && go build
