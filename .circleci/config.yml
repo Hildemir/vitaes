@@ -68,7 +68,7 @@ jobs:
 
   stolas_module_steps:
 
-    working_directory: ~/stolas_module
+    working_directory: /go/src/github.com/NeverDefineUs/vitaes/stolas_module
 
     docker:
       - image: circleci/golang:1.11
