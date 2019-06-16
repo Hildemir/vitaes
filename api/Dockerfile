@@ -7,7 +7,6 @@ ENV GO111MODULE=on
 WORKDIR /vitaes
 COPY Gopkg.lock .
 COPY Gopkg.toml .
-COPY vendor .
 RUN dep ensure
 COPY . .
 RUN go get -d -v ./...
